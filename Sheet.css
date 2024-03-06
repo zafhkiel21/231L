@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+@media (max-width: 768px) {  /* Targets screens less than or equal to 768px wide (adjust as needed) */
+  /* Your styles to maintain the design when minimized */
+  .my-element {
+    display: flex;  /* Example: Change layout to maintain desired formatting */
+  }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.logo {
+    display: flex;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 125px;
+    height: 125px;
+        width: 125px;
+        height: 125px;
+        background-color: #fff;
+        border-radius: 50%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(icc.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(225, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+    .wrapper h1 {
+        user-select: none;
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .wrapper .input-box {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        margin: 30px 0;
+    }
+.input-box input {
+    width: 100%;
+    height:100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(225, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: #fff;
+}
+
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+
+}
+
+.wrapper .remember-forgot {
+    user-select: none;
+    display:flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.remember-forgot a{
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+
+}
+
+.wrapper .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a {
+    color:#fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+.Sidebar {
+    user-select: none;
+    position: fixed;
+    left: 0px;
+    width: 50px; /* Set initial width to 0 */
+    height: 100%;
+    background-color: transparent;
+    transition: all 0.5s ease; /* Add transition for width change */
+    opacity: 0;
+    overflow: hidden;
+    background-color: transparent;
+    border: 2px solid rgba(225, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    z-index: 3;
+  }
+  
+  .Sidebar h3 {
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    user-select: none;
+    opacity: 0;
+    overflow: hidden;
+    transition: background-color 0.5s; /* Add transition for 
+    background-color change */
+    background-color: transparent;
+    border: 2px solid rgba(225, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+  }
+  .Sidebar:hover{
+    width: 250px;
+    opacity: 1;
+  }
+
+
+  .Sidebar:hover h3{
+    opacity: 1;
+  }
+  .Sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(225, 255, 255, .1);
+    border-bottom: 1px solid black;
+    transition: padding-left 0.3s ease; /* Add transition for padding-left change */
+  }
+  
+  ul li:hover a {
+    padding-left: 50px;
+  }
+  
+  .Sidebar ul a i {
+    user-select: none;
+    margin-right: 16px;
+    transition: margin-right 0.3s; /* Add transition for margin-right change */
+  }
+  .O{
+    position: absolute;
+    left: 0px;
+    width: 25px; /* Set initial width to 0 */
+    height: 100%;
+    background-color: transparent;
+    transition: all 0.5s ease; /* Add transition for width change */
+    overflow: hidden;
+    border: 2px solid rgba(225, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    z-index: 2;
+  }
+  .table-container {
+    margin: 20px 0; /* Set margin to 0 */
+    border: 2px solid rgba(225, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    max-height: 725px; /* Set a fixed height for the container */
+    overflow-x: auto;    /* Enable scrolling if the content overflows */
+    margin-top: 70px; /* Adjust the margin-left to move the table to the right */
+
+  }
+
+  table {
+    border: 2px solid rgba(225, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-width: 950px;
+    table-layout: fixed;
+    display: flex;
+    align-items: center;
+    height: 100vh; /* Set to 100% of viewport height */
+    border-collapse: collapse;
+    align-items: flex-start; /* Align items at the start to avoid centering vertically */
+  }
+
+  th, td {
+    border: 1px solid gray;
+    background-color: #fff;
+    padding: 8px;
+    text-align: center;
+    white-space: nowrap; /* Prevent line breaks within cells */
+    overflow: hidden; /* Hide overflow content */
+    text-overflow: ellipsis; /* Show ellipsis for overflow content */
+    width: auto; /* Use auto to allow cells to expand based on content */
+    user-select: none;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+  .search{
+    user-select: none;
+    align-items: center;
+    justify-items: center;
+    color: white;
+    line-height: 38px;
+    font-size: 18px;
+    position: fixed;
+    top: 80px;
+    right: 1125px;
+    background-color: transparent;
+    border: 2px solid rgba(225, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+
+  }
+  .submited{
+    user-select: none;
+    border: 2px solid rgba(225, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+  }
+  .file_importExcel{
+    right: 450px;
+    align-items: center;
+    justify-items: center;
+    color: white;
+    line-height: 38px;
+    font-size: 18px;
+    position: fixed;
+    top: 80px;
+    background-color: transparent;
+    border: 2px solid rgba(225, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+  }
+  .select{
+    user-select: none;
+    align-items: center;
+    justify-items: center;
+    color: white;
+    line-height: 38px;
+    font-size: 18px;
+    position: fixed;
+    top: 80px;
+    right: 700px;
+    background-color: transparent;
+    border: 2px solid rgba(225, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+
+  }
+  
+  .w{
+    top: 150px;
+    border: 2px solid rgba(225, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+    width: 1000px;
+    display: flex;
+    position: fixed;
+    height: 700px; /* Set to 100% of viewport height */
+    border-collapse: collapse;
+    z-index: 4;
+  }
+
+  .listform{
+    padding: 8px;
+    text-align: left;
+    white-space: nowrap; /* Prevent line breaks within cells */
+    overflow: hidden; /* Hide overflow content */
+    text-overflow: ellipsis; /* Show ellipsis for overflow content */
+    width: auto; /* Use auto to allow cells to expand based on content */
+    user-select: none;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    z-index: 20;
+    overflow-y: auto;
+    max-height: 750px;
+  }
+  .searchs{
+    user-select: none;
+    align-items: center;
+    justify-items: center;
+    color: white;
+    line-height: 38px;
+    font-size: 18px;
+    position: fixed;
+    top: 80px;
+    right: 1125px;
+    background-color: transparent;
+    border: 2px solid rgba(225, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+
+  }
+
+  .detail{
+    padding: 8px;
+    margin: 0;
+    align-items: center;
+    user-select: none;
+    font-size: 20px;
+    line-height: 38px;
+    width: 40%;
+    position: fixed;
+    border: 2px solid rgba(225, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    font-family: "poppins", sans-serif;
+    color: white;
+  }

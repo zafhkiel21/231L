@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "rcSxmgPmrWtwIATVOofX6PLFkTA40qF9GO0G7qWQ9ufd6JIBT17nbi9HvxNbeCma5+UL6QGevJFatpLTdd+nug==",
+  "success": true,
+  "projectFilePath": "c:\\xampp\\htdocs\\Grade tracker system\\grades\\grades.sqlproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\arden\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.0\\microsoft.netframework.referenceassemblies.1.0.0.nupkg.sha512",
+    "C:\\Users\\arden\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net46\\1.0.0\\microsoft.netframework.referenceassemblies.net46.1.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
